@@ -1,0 +1,10 @@
+CREATE TABLE `hosts_ban` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `ip` varchar(19) NOT NULL,
+ `power` int(11) NOT NULL DEFAULT '1',
+ `ban_time` int(11) NOT NULL DEFAULT '5',
+ `expiry` datetime NOT NULL,
+ `last_access` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ip` (`ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
