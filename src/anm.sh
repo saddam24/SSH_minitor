@@ -29,7 +29,7 @@ echo "insert into ips values ('$IP');"
 
 echo "use fail2ban; 
 
-INSERT INTO hosts_ban (ip,  ban_time, expiry, last_access) VALUES('$BLOCK', '$ban_time', NOW() + INTERVAL '$ban_time' SECOND, NOW()) ON DUPLICATE KEY UPDATE power = power + 1, expiry = NOW() + INTERVAL (POWER(2,(power-1))*ban_time) SECOND, last_access = NOW();" | mysql -u root &
+INSERT INTO hosts_ban (ip,  ban_time, expiry, last_access) VALUES('$BLOCK', '$ban_time', NOW() + INTERVAL '$ban_time' SECOND, NOW()) ON DUPLICATE KEY UPDATE power = power + 1, expiry = NOW() + INTERVAL ((power)*ban_time) SECOND, last_access = NOW();" | mysql -u root &
  
  done
 
