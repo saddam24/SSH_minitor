@@ -14,7 +14,7 @@ Section 4: Acknowledgement
 ########################################################################################################################################
 
 1. USER GUIDE:
-        ################################# ABOUT SSH MONITOR #################################################################
+         ################################## ABOUT SSH  ###################################################################
 
 This project describes the SSH (Secure Shell) dictionary attacks detection where
 we are required to monitor SSH connection attempts to avoid possible dictionary
