@@ -1,5 +1,5 @@
 #! /bin/sh
-
+#taking time interval
 SLEEP=5
 MAX_CONN=5
 ban_time=60
@@ -25,7 +25,7 @@ echo "insert into ips values ('$IP');"
         ) | sqlite3 |\
         
         while read BLOCK; do
-#echo "select ip from (select ip, count(ip) c from ips.txt where ip != '' group by ip having c > $MAX_CONN order by c asc);"
+echo "select ip from (select ip, count(ip) c from ips.txt where ip != '' group by ip having c > $MAX_CONN order by c asc);"
 
 echo "use fail2ban; 
 
