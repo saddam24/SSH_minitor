@@ -13,7 +13,7 @@ Section 4: Acknowledgement
 
 ########################################################################################################################################
 
-This is a group project fro Applied Network management course.
+This is a group project for Applied Network management course.
 
 1. USER GUIDE:
          ################################## ABOUT SSH  ###################################################################
